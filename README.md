@@ -10,6 +10,8 @@ This HOWTO contains instructions on how to build and configure a validator node 
 | Recommended |16|32|1000|1| 
 SSD disks are recommended for /var/ton-work/db storage.
 ## 2. Prerequisites
+
+git clone https://github.com/tonlabs/main.ton.dev.git
 ### 2.1 Set the Environment
 Adjust (if needed) `main.ton.dev/scripts/env.sh`
     

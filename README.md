@@ -31,6 +31,13 @@ Multisignature wallet (or just wallet) is used in validator script to send elect
 Let `N` be the total number of wallet custodians and `K` the number of minimal confirmations required to execute a wallet transaction.
 
 1. Read [TONOS-CLI documentation](https://docs.ton.dev/86757ecb2/v/0/p/94921e-running-tonos-cli-with-tails-os-and-working-with-multisignature-wallet) (*Deploying Multisignature Wallet to TON blockchain*) and generate seed phrases and public keys for `N - 1`  custodians.
+
+git clone https://github.com/tonlabs/tonos-cli.git
+cd tonos-cli
+cargo build --release
+cd target/release/
+./tonos-cli config --url https://net.ton.dev
+
 2. Generate wallet address and `Nth` custodian key:
 ```
     $ ./msig_genaddr.sh
